@@ -1,0 +1,58 @@
+/* General Layout */
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #34495e;
+    color: white;
+  }
+  
+  h1, h2 {
+    font-family: Georgia, serif;
+    margin-top: 0;
+  }
+  
+  /* Tagline */
+  .tagline {
+    font-style: italic;
+    margin: 0.5em 0;
+  }
+  
+  /* Navigation Links */
+  nav a {
+    color: #e67e22;   /* orange links */
+    text-decoration: none;
+    margin: 0 0.5em;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Validation Links */
+  footer p a {
+    margin: 0 0.5em;
+  }
+  
+  /* Sections */
+  section {
+    margin: 2em 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    body {
+      width: 100%;
+      font-size: 0.9em;
+    }
+  }
+  
