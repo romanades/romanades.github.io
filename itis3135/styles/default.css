@@ -1,58 +1,91 @@
-/* General Layout */
 body {
-    font-family: Verdana, sans-serif;
-    margin: 0 auto;
-    max-width: 900px;
-    width: 90%;
-    background-color: #f5f7fa;
-    color: #2c3e50;
-    line-height: 1.6;
+  font-family: Verdana, sans-serif;
+  max-width: 1200px;   /* Max width for large screens */
+  width: 90%;          /* Flexible percentage width */
+  margin: 0 auto;      /* Centers content horizontally */
+  background-color: #f5f7fa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* HEADER AND FOOTER */
+header, footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #34495e;
+  color: white;
+}
+
+h1, h2 {
+  font-family: Georgia, serif;
+  margin-top: 0;
+}
+
+/* TAGLINE */
+.tagline {
+  font-style: italic;
+  margin: 0.5em 0;
+}
+
+/* NAVIGATION LINKS */
+nav a {
+  color: #e67e22;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER VALIDATION LINKS */
+footer p a {
+  margin: 0 0.5em;
+}
+
+/* SECTIONS */
+section {
+  margin: 2em 0;
+}
+
+/* SAMPLE BOX FOR TESTING RESPONSIVENESS */
+#colorbox {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin: 50px auto;
+}
+
+/* MEDIA QUERIES */
+
+/* Laptop / Small Screens */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+  body {
+      width: 85%;
   }
-  
-  header, footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #34495e;
-    color: white;
+  #colorbox {
+      background-color: yellow;
   }
-  
-  h1, h2 {
-    font-family: Georgia, serif;
-    margin-top: 0;
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  body {
+      width: 95%;
   }
-  
-  /* Tagline */
-  .tagline {
-    font-style: italic;
-    margin: 0.5em 0;
+  #colorbox {
+      background-color: orange;
   }
-  
-  /* Navigation Links */
-  nav a {
-    color: #e67e22;   /* orange links */
-    text-decoration: none;
-    margin: 0 0.5em;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer Validation Links */
-  footer p a {
-    margin: 0 0.5em;
-  }
-  
-  /* Sections */
-  section {
-    margin: 2em 0;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 600px) {
-    body {
-      width: 100%;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  body {
+      width: 98%;
       font-size: 0.9em;
-    }
   }
+  #colorbox {
+      background-color: red;
+  }
+}
   
