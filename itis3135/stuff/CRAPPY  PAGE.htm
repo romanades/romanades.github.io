@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY CRAPPY PAGE</title>
+
+<!-- Absolute link to external stylesheet (bad practice!) -->
+<link rel="stylesheet" href="C:/Users/Me/Documents/Website/styles/main.css">
+
+<style>
+/* Random inline CSS for extra badness */
+h1 { font-family: Papyrus; color: black; text-align: center; }
+h2 { font-family: "Comic Sans MS"; color: black; text-align: center; }
+p { font-family: "Times New Roman"; color: black; margin-left: 50px; margin-right: 10px; }
+.big-border {
+  border-top: 10px dotted red;
+  border-right: 15px dashed green;
+  border-bottom: 20px double blue;
+  border-left: 25px solid purple;
+  padding: 25px;
+}
+</style>
+</head>
+
+<body style="background-color: white;">
+
+<!-- Out-of-order headers -->
+<h2>Confusing caption that is out of place</h2>
+<h1>A TITLE COULD GO HERE</h1>
+
+<!-- Big image from your provided link, distorted and with no extension -->
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" 
+     alt="super long pointless name for an image I found randomly" 
+     width="400" height="400">
+
+<!-- Caption using a heading tag (not <figcaption>) -->
+<h3>CONFUSING CAPTION THAT IS OUT OF PLACE</h3>
+
+<br><br>
+
+<!-- Centered bullet list -->
+<div style="text-align:center;">
+<ul>
+  <li>This list is centered incorrectly</li>
+  <li>This is an incorrectly centered point</li>
+  <li>This is another incorrectly centered point</li>
+</ul>
+</div>
+
+<!-- Centered huge text paragraph -->
+<p style="text-align:center; font-size:48px; background-color:yellow;">
+This is an enormous paragraph in the middle of the page with poor contrast and a random background color.
+</p>
+
+<!-- Underlined text that isn’t a link -->
+<p><u>THIS TEXT IS UNDERLINED YET ISNT A LINK</u></p>
+
+<!-- Absolute link (default colors, no styling) -->
+<a href="http://www.google.com">CLICK HERE</a>
+
+<!-- Inconsistent margins -->
+<p style="margin-left:5px;">Small margin paragraph.</p>
+<p style="margin-left:200px;">Large margin paragraph.</p>
+
+<!-- Big ugly border box -->
+<div class="big-border">
+  <p style="font-family:Comic Sans MS;">This box has every border type and looks horrible!</p>
+</div>
+
+<!-- Random extra blank lines -->
+
+<br><br><br><br><br><br><br><br>
+
+</body>
+</html>
